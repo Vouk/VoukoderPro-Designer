@@ -8,8 +8,6 @@
 #include <QVBoxLayout>
 #include <QLabel>
 
-#include "include/QtPropertyBrowser/qttreepropertybrowser.h"
-#include "include/QtPropertyBrowser/qtvariantproperty.h"
 #include "sceneeditornodedata.h"
 
 #define TYPE_RAW_VIDEO "uncompressed_video"
