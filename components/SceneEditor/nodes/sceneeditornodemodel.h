@@ -3,7 +3,7 @@
 #include <nodes/NodeDataModel>
 #include <nodes/NodeData>
 
-#include "../VoukoderPro/voukoderpro_api.h"
+#include "../VoukoderPro/VoukoderPro/voukoderpro_api.h"
 #include <QDialog>
 #include <QVBoxLayout>
 #include <QLabel>

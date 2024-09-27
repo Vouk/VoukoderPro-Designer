@@ -3,7 +3,7 @@
 #include <fstream>
 #include <boost/filesystem.hpp>
 
-#include "../VoukoderPro/voukoderpro_api.h"
+#include "../VoukoderPro/VoukoderPro/voukoderpro_api.h"
 
 Preferences::Preferences():
     filename((VoukoderProData() / "preferences.json").string())

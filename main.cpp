@@ -9,8 +9,8 @@
 
 #include <boost/dll/import.hpp>
 
-#include "../VoukoderPro/voukoderpro_api.h"
-#include "../VoukoderPro/Version.h"
+#include "../VoukoderPro/VoukoderPro/voukoderpro_api.h"
+#include "../VoukoderPro/VoukoderPro/Version.h"
 
 #include "mainwindow.h"
 #include "sceneselectdialog.h"

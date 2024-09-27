@@ -112,12 +112,11 @@ unix:LIBS += -L$$(BOOST_ROOT)\stage\lib -llibboost_filesystem-mgw11-mt-x64-1_80
 
 # Node Editor
 DEFINES += NODE_EDITOR_STATIC
-win32:CONFIG(release, debug|release): LIBS += -L../3rdparty/nodeeditor-v2/lib/ -lnodes
-else:win32:CONFIG(debug, debug|release): LIBS += -L../3rdparty/nodeeditor-v2/lib/ -lnodesd
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/3rdparty/nodeeditor-v2/lib/ -lnodes
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/3rdparty/nodeeditor-v2/lib/ -lnodesd
 else:unix: LIBS += -L$$PWD/lib/ -lnodes
-INCLUDEPATH += ../3rdparty/nodeeditor-v2/include
-DEPENDPATH += ../3rdparty/nodeeditor-v2/include
-
+INCLUDEPATH += $$PWD/3rdparty/nodeeditor-v2/include
+DEPENDPATH += $$PWD/3rdparty/nodeeditor-v2/include
 RESOURCES += \
     designer.qrc \
     fugue.qrc
