@@ -656,6 +656,8 @@ VoukoderPro::ItemParamGroup* PropertiesDialog::getGroupByParamId(const VoukoderP
  */
 void PropertiesDialog::on_property_valueChanged(QtProperty* property, const QVariant& unused)
 {
+    Q_UNUSED(unused)
+
     // Can we map this property to a param?
     if (propertyParamMap.find(property) == propertyParamMap.end())
         return;
@@ -827,6 +829,8 @@ void PropertiesDialog::on_filenameButton_clicked()
  */
 void PropertiesDialog::on_variablesWidget_itemDoubleClicked(QTreeWidgetItem *item, int column)
 {
+    Q_UNUSED(column)
+
     const QString variable = "${" + item->text(0) + "}";
 
     const int cursorPosition = ui->filenameInput->cursorPosition();

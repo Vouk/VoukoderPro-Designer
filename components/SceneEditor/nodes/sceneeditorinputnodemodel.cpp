@@ -29,6 +29,9 @@ unsigned int SceneEditorInputNodeModel::nPorts(QtNodes::PortType portType) const
  */
 QtNodes::NodeDataType SceneEditorInputNodeModel::dataType(QtNodes::PortType portType, QtNodes::PortIndex portIndex) const
 {
+    Q_UNUSED(portIndex)
+    Q_UNUSED(portType)
+
     if (_nodeInfo->mediaType == VoukoderPro::MediaType::video)
         return QtNodes::NodeDataType{ TYPE_RAW_VIDEO, "video" };
     else

@@ -32,5 +32,6 @@
 *.app
 
 # QT Creator
-/.vs
-/build-Designer-Desktop_Qt_*
+.vs/
+build-Designer-Desktop_Qt_*/
+
