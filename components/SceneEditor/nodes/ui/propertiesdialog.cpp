@@ -7,7 +7,7 @@
 #include "preferences.h"
 
 #include "ui_propertiesdialog.h"
-#include "../VoukoderPro/VoukoderPro/types.h"
+#include "../Core/types.h"
 
 /**
  * @brief PropertiesDialog::PropertiesDialog

@@ -2,7 +2,7 @@
 
 #include <QDialog>
 
-#include "../VoukoderPro/VoukoderPro/voukoderpro_api.h"
+#include "../Core/voukoderpro_api.h"
 #include "preferences.h"
 
 namespace Ui {

@@ -3,7 +3,7 @@
 #include <QMainWindow>
 #include <boost/function.hpp>
 
-#include "../VoukoderPro/VoukoderPro/voukoderpro_api.h"
+#include "../Core/voukoderpro_api.h"
 #include <nodes/DataModelRegistry>
 #include <nodes/internal/Node.hpp>
 #include "components/SceneEditor/sceneeditorview.h"

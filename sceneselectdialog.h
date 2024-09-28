@@ -4,7 +4,7 @@
 #include <QDialog>
 #include <QListWidgetItem>
 
-#include "../VoukoderPro/VoukoderPro/voukoderpro_api.h"
+#include "../Core/voukoderpro_api.h"
 
 namespace Ui {
 class SceneSelectDialog;

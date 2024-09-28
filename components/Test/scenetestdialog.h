@@ -7,7 +7,7 @@
 #include <QThread>
 #include <QAbstractButton>
 
-#include "../VoukoderPro/VoukoderPro/voukoderpro_api.h"
+#include "../Core/voukoderpro_api.h"
 
 class Worker : public QThread
 {

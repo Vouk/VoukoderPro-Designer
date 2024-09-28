@@ -1,7 +1,7 @@
 #ifndef REGISTRATIONDIALOG_H
 #define REGISTRATIONDIALOG_H
 
-#include "../VoukoderPro/VoukoderPro/voukoderpro_api.h"
+#include "../Core/voukoderpro_api.h"
 
 #include <QDialog>
 

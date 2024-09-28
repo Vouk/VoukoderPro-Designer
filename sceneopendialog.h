@@ -4,7 +4,7 @@
 #include <QDialog>
 #include <QTreeWidgetItem>
 
-#include "../VoukoderPro/VoukoderPro/voukoderpro_api.h"
+#include "../Core/voukoderpro_api.h"
 
 Q_DECLARE_METATYPE(std::shared_ptr<VoukoderPro::SceneInfo>)
 

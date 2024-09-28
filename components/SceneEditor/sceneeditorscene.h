@@ -3,7 +3,7 @@
 #include <nodes/FlowScene>
 #include <QMenu>
 
-#include "../VoukoderPro/VoukoderPro/voukoderpro_api.h"
+#include "../Core/voukoderpro_api.h"
 
 /**
  * @brief The SceneEditorScene class

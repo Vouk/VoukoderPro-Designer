@@ -3,7 +3,7 @@
 #include <QDialog>
 #include <QAbstractButton>
 #include <QTreeWidgetItem>
-#include "../VoukoderPro/VoukoderPro/types.h"
+#include "../Core/types.h"
 #include "qtvariantproperty.h"
 #include <json.hpp>
 

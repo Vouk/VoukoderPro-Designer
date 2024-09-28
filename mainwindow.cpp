@@ -12,7 +12,6 @@
 #include "newsdialog.h"
 #include "registrationdialog.h"
 #include "components/Test/performancetestdialog.h"
-#include "../VoukoderPro/VoukoderPro/Version.h"
 
 #include <QTimer>
 #include <QUuid>

@@ -2,7 +2,7 @@
 
 #include <QDialog>
 
-#include "../VoukoderPro/VoukoderPro/types.h"
+#include "../Core/types.h"
 
 namespace Ui {
 class VideoInputProperties;
