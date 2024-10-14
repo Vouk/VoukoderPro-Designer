@@ -25,8 +25,8 @@ public:
 protected:
     void contextMenuEvent(QContextMenuEvent* event) override;
     void wheelEvent(QWheelEvent *event) override;
-    void hideEvent(QHideEvent* event) override {}
-    void showEvent(QShowEvent* event) override {}
+    void hideEvent(QHideEvent* event) override { Q_UNUSED(event) }
+    void showEvent(QShowEvent* event) override { Q_UNUSED(event) }
 
 private Q_SIGNAL:
     void nodeDoubleClick();

@@ -20,6 +20,8 @@ SceneEditorEncoderNodeModel::SceneEditorEncoderNodeModel(std::shared_ptr<Voukode
  */
 unsigned int SceneEditorEncoderNodeModel::nPorts(QtNodes::PortType portType) const
 {
+    Q_UNUSED(portType)
+
     return 1;
 }
 
@@ -31,6 +33,8 @@ unsigned int SceneEditorEncoderNodeModel::nPorts(QtNodes::PortType portType) con
  */
 QtNodes::NodeDataType SceneEditorEncoderNodeModel::dataType(QtNodes::PortType portType, QtNodes::PortIndex portIndex) const
 {
+    Q_UNUSED(portIndex)
+
     if (portType == QtNodes::PortType::In)
     {
         if (_nodeInfo->mediaType == VoukoderPro::MediaType::video)
@@ -49,8 +53,10 @@ QtNodes::NodeDataType SceneEditorEncoderNodeModel::dataType(QtNodes::PortType po
  * @param previousNodeData
  * @param port
  */
-void SceneEditorEncoderNodeModel::setInData(std::shared_ptr<QtNodes::NodeData> previousNodeData, const QtNodes::PortIndex port)
-{}
+void SceneEditorEncoderNodeModel::setInData(std::shared_ptr<QtNodes::NodeData> previousNodeData, const QtNodes::PortIndex portIndex)
+{
+    Q_UNUSED(portIndex)
+}
 
 /**
  * @brief SceneEditorEncoderNodeModel::hasProperties

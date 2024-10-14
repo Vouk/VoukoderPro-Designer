@@ -18,6 +18,8 @@ SceneEditorFilterNodeModel::SceneEditorFilterNodeModel(std::shared_ptr<VoukoderP
  */
 unsigned int SceneEditorFilterNodeModel::nPorts(QtNodes::PortType portType) const
 {
+    Q_UNUSED(portType)
+
     return 1;
 }
 
@@ -29,6 +31,9 @@ unsigned int SceneEditorFilterNodeModel::nPorts(QtNodes::PortType portType) cons
  */
 QtNodes::NodeDataType SceneEditorFilterNodeModel::dataType(QtNodes::PortType portType, QtNodes::PortIndex portIndex) const
 {
+    Q_UNUSED(portType)
+    Q_UNUSED(portIndex)
+
     if (_nodeInfo->mediaType == VoukoderPro::MediaType::video)
         return QtNodes::NodeDataType{ TYPE_RAW_VIDEO, "video" };
     else

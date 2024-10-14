@@ -48,6 +48,8 @@ unsigned int SceneEditorMuxerNodeModel::nPorts(QtNodes::PortType portType) const
  */
 QtNodes::NodeDataType SceneEditorMuxerNodeModel::dataType(QtNodes::PortType portType, QtNodes::PortIndex portIndex) const
 {
+    Q_UNUSED(portIndex)
+
     if (portType == QtNodes::PortType::In)
     {
         return QtNodes::NodeDataType{ TYPE_STREAM, "stream" };

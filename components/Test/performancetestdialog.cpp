@@ -148,6 +148,9 @@ void PerformanceTestDialog::on_deleteVTrackButton_clicked()
 
 void PerformanceTestDialog::on_videoTracksWidget_itemDoubleClicked(QTreeWidgetItem *item, int column)
 {
+    Q_UNUSED(item)
+    Q_UNUSED(column)
+
     on_editVTrackButton_clicked();
 }
 
@@ -202,6 +205,9 @@ void PerformanceTestDialog::on_deleteATrackButton_clicked()
 
 void PerformanceTestDialog::on_audioTracksWidget_itemDoubleClicked(QTreeWidgetItem *item, int column)
 {
+    Q_UNUSED(item)
+    Q_UNUSED(column)
+
     on_editATrackButton_clicked();
 }
 
