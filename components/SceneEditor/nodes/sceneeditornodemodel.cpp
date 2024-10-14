@@ -107,8 +107,10 @@ QString SceneEditorNodeModel::name() const
  * @param previousNodeData
  * @param port
  */
-void SceneEditorNodeModel::setInData(std::shared_ptr<QtNodes::NodeData> previousNodeData, const QtNodes::PortIndex port)
+void SceneEditorNodeModel::setInData(std::shared_ptr<QtNodes::NodeData> previousNodeData, const QtNodes::PortIndex portIndex)
 {
+    Q_UNUSED(portIndex)
+
     this->nodeData = previousNodeData;
 }
 
@@ -119,6 +121,8 @@ void SceneEditorNodeModel::setInData(std::shared_ptr<QtNodes::NodeData> previous
  */
 std::shared_ptr<QtNodes::NodeData> SceneEditorNodeModel::outData(const QtNodes::PortIndex port)
 {
+    Q_UNUSED(port)
+
     return nodeData;
 }
 

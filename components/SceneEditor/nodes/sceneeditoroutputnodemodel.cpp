@@ -18,6 +18,8 @@ SceneEditorOutputNodeModel::SceneEditorOutputNodeModel(std::shared_ptr<VoukoderP
  */
 unsigned int SceneEditorOutputNodeModel::nPorts(QtNodes::PortType portType) const
 {
+    Q_UNUSED(portType)
+
     return 1;
 }
 
@@ -29,6 +31,8 @@ unsigned int SceneEditorOutputNodeModel::nPorts(QtNodes::PortType portType) cons
  */
 QtNodes::NodeDataType SceneEditorOutputNodeModel::dataType(QtNodes::PortType portType, QtNodes::PortIndex portIndex) const
 {
+    Q_UNUSED(portIndex)
+
     if (portType == QtNodes::PortType::In)
     {
         return QtNodes::NodeDataType{ TYPE_MUX, "mux" };

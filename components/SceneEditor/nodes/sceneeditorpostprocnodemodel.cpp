@@ -28,6 +28,9 @@ unsigned int SceneEditorPostProcNodeModel::nPorts(QtNodes::PortType portType) co
  */
 QtNodes::NodeDataType SceneEditorPostProcNodeModel::dataType(QtNodes::PortType portType, QtNodes::PortIndex portIndex) const
 {
+    Q_UNUSED(portType)
+    Q_UNUSED(portIndex)
+
     return QtNodes::NodeDataType{ TYPE_OUT, "out" };
 }
 
