@@ -39,5 +39,7 @@ QString SceneSelectDialog::selectedScene() const
 
 void SceneSelectDialog::on_listWidget_itemDoubleClicked(QListWidgetItem *item)
 {
+    Q_UNUSED(item)
+
     accept();
 }

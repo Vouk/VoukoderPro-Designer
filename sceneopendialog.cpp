@@ -49,13 +49,19 @@ std::shared_ptr<VoukoderPro::SceneInfo> SceneOpenDialog::selectedSceneInfo()
 
 void SceneOpenDialog::on_scenes_currentItemChanged(QTreeWidgetItem *current, QTreeWidgetItem *previous)
 {
+    Q_UNUSED(current)
+    Q_UNUSED(previous)
+
     ui->buttonBox->button(QDialogButtonBox::Open)->setEnabled(ui->scenes->selectedItems().count() > 0);
     ui->deleteButton->setEnabled(ui->scenes->selectedItems().count() > 0);
 }
 
 void SceneOpenDialog::on_scenes_itemDoubleClicked(QTreeWidgetItem *item, int column)
 {
-    ui->buttonBox->button(QDialogButtonBox::Open)->click();    
+    Q_UNUSED(item)
+    Q_UNUSED(column)
+
+    ui->buttonBox->button(QDialogButtonBox::Open)->click();
 }
 
 void SceneOpenDialog::on_deleteButton_clicked()

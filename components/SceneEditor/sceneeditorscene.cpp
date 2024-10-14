@@ -91,7 +91,7 @@ void SceneEditorScene::setSceneInfo(std::shared_ptr<VoukoderPro::SceneInfo> scen
     // Connect the nodes with existing connections
     auto connectNodes = [&](QtNodes::Node& node, const std::vector<std::vector<std::string>> pins, const QtNodes::PortType type)
     {
-        const QtNodes::PortIndex total = pins.size();
+        const QtNodes::PortIndex total = (QtNodes::PortIndex)pins.size();
         for (QtNodes::PortIndex index = 0; index < total; index++)
         {
             const auto& ids = pins.at(index);
@@ -261,7 +261,7 @@ void SceneEditorScene::onConnectionCreated(QtNodes::Connection const &connection
         auto& ports = portType == QtNodes::PortType::In ? nodeInfo->inputs : nodeInfo->outputs;
 
         // Fill up possibly preceeding nodes
-        for(int i = ports.size(); i <= portIndex; i++)
+        for(QtNodes::PortIndex i = (QtNodes::PortIndex)ports.size(); i <= portIndex; i++)
             ports.push_back(std::vector<std::string>());
 
         ports.at(portIndex).push_back(id);

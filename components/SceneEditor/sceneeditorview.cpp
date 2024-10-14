@@ -106,7 +106,9 @@ SceneEditorScene* SceneEditorView::editorScene()
  * @param event
  */
 void SceneEditorView::wheelEvent(QWheelEvent *event)
-{}
+{
+    Q_UNUSED(event)
+}
 
 /**
  * @brief SceneEditorView::contextMenuEvent

@@ -628,6 +628,8 @@ QMenu* MainWindow::nodeMenu()
 
 QMenu* MainWindow::nodeMenu(QtNodes::Node& node)
 {
+    Q_UNUSED(node)
+
     ui->actionNodeProperties->setEnabled(true);
     ui->actionNodeDelete->setEnabled(true);
 
@@ -791,7 +793,7 @@ void MainWindow::on_sceneSelectionChanged()
     if (view)
     {
         SceneEditorScene* scene = view->editorScene();
-        const int selectedNodes = scene->selectedNodes().size();
+        const size_t selectedNodes = scene->selectedNodes().size();
 
         ui->actionNodeDelete->setEnabled(selectedNodes > 0);
         ui->actionNodeProperties->setEnabled(selectedNodes == 1);
@@ -890,6 +892,8 @@ void MainWindow::closeScene(int index)
 
 void MainWindow::on_scenes_currentChanged(int index)
 {
+    Q_UNUSED(index)
+
     SceneEditorView* view = currentSceneView();
     if (view)
     {
